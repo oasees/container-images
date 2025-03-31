@@ -16,6 +16,7 @@ jobs:
       matrix:
         image:
           - name: hardhat_node
+          - name: ipfs_node
 
     steps:
       - name: Checkout repository
