@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DAO Creation Wizard</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <div class="sidebar">
+            <h2>DAO Creation Steps</h2>
+            <div class="steps-list">
+                <div class="step-item" data-step="governance">
+                    <div class="step-header">
+                        <span class="step-icon">
+                            <i class="fas fa-circle-check"></i>
+                        </span>
+                        <span class="step-name">Governance</span>
+                    </div>
+                    <div class="step-details">
+                        <div class="compilation-status">Not compiled</div>
+                        <div class="contract-data">
+                            <div class="data-preview abi-preview">
+                                <span class="preview-label">ABI</span>
+                                <pre class="preview-content"></pre>
+                            </div>
+                            <div class="data-preview bytecode-preview">
+                                <span class="preview-label">Bytecode</span>
+                                <pre class="preview-content"></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-item" data-step="votetoken">
+                    <div class="step-header">
+                        <span class="step-icon">
+                            <i class="fas fa-circle-check"></i>
+                        </span>
+                        <span class="step-name">Vote Token</span>
+                    </div>
+                    <div class="step-details">
+                        <div class="compilation-status">Not compiled</div>
+                        <div class="contract-data">
+                            <div class="data-preview abi-preview">
+                                <span class="preview-label">ABI</span>
+                                <pre class="preview-content"></pre>
+                            </div>
+                            <div class="data-preview bytecode-preview">
+                                <span class="preview-label">Bytecode</span>
+                                <pre class="preview-content"></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-item" data-step="timelock">
+                    <div class="step-header">
+                        <span class="step-icon">
+                            <i class="fas fa-circle-check"></i>
+                        </span>
+                        <span class="step-name">Time Lock</span>
+                    </div>
+                    <div class="step-details">
+                        <div class="compilation-status">Not compiled</div>
+                        <div class="contract-data">
+                            <div class="data-preview abi-preview">
+                                <span class="preview-label">ABI</span>
+                                <pre class="preview-content"></pre>
+                            </div>
+                            <div class="data-preview bytecode-preview">
+                                <span class="preview-label">Bytecode</span>
+                                <pre class="preview-content"></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-item" data-step="box">
+                    <div class="step-header">
+                        <span class="step-icon">
+                            <i class="fas fa-circle-check"></i>
+                        </span>
+                        <span class="step-name">Box</span>
+                    </div>
+                    <div class="step-details">
+                        <div class="compilation-status">Not compiled</div>
+                        <div class="contract-data">
+                            <div class="data-preview abi-preview">
+                                <span class="preview-label">ABI</span>
+                                <pre class="preview-content"></pre>
+                            </div>
+                            <div class="data-preview bytecode-preview">
+                                <span class="preview-label">Bytecode</span>
+                                <pre class="preview-content"></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="editor-container">
+                <div id="editor"></div>
+                <div class="control-panel">
+                    <button onclick="compile()" class="compile-btn">
+                        <i class="fas fa-code"></i> Compile
+                    </button>
+                    <button onclick="nextStep()" id="nextBtn" class="next-btn" disabled>
+                        <i class="fas fa-arrow-right"></i> Next Step
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.34.0/min/vs/loader.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/web3@1.8.0/dist/web3.min.js"></script> -->
+    <script src="/js/wizard.js"></script>
+</body>
+</html>
